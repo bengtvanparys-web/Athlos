@@ -6,25 +6,25 @@
 <title>Athlos – dashboard</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #080D16;  }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #080D16; color: #E5E7EB; }
   .layout { display: flex; flex-wrap: wrap; min-height: 100vh; }
   nav { flex: 0 0 220px; background: #111827; padding: 24px 16px; display: flex; flex-direction: column; gap: 8px; }
   .logo { color: #F9FAFB; font-weight: 700; font-size: 20px; margin-bottom: 16px; }
   nav a { color: #D1D5DB; padding: 12px; border-radius: 8px; text-decoration: none; }
   nav a.active { background: #0B6B4F; color: #F9FAFB; font-weight: 600; }
   main { flex: 1 1 600px; min-width: 0; padding: 32px; display: flex; flex-direction: column; gap: 24px; }
-  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; color:  }
-  h1 { margin: 0; font-size: 28px; color: }
-  h2 { margin: 0 0 16px; font-size: 18px; }
-  .sub { margin: 4px 0 0; color: #4B5563; }
+  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  h1 { margin: 0; font-size: 28px; color: #F9FAFB; }
+  h2 { margin: 0 0 16px; font-size: 18px; color: #F9FAFB; }
+  .sub { margin: 4px 0 0; color: #9CA3AF; }
   .btn { min-height: 44px; padding: 0 20px; border: 0; border-radius: 8px; background: #0B6B4F; color: #fff; font-weight: 600; font-size: 15px; cursor: pointer; }
-  .card { background: #111827; border: 1px solid #E5E7EB; border-radius: 12px; padding: 20px; }
+  .card { background: #111827; border: 1px solid #1F2937; border-radius: 12px; padding: 20px; }
   .scroll { overflow-x: auto; }
   .week { display: grid; grid-template-columns: repeat(7, minmax(110px, 1fr)); gap: 8px; }
-  .day { font-weight: 600; color: #4B5563; }
-  .slot { border-radius: 8px; padding: 10px; min-height: 72px; font-size: 14px; background: #F3F4F6; }
-  .slot.train { background: #AB1D1D; }
-  .slot.race { background: #FEF3C7; }
+  .day { font-weight: 600; color: #9CA3AF; }
+  .slot { border-radius: 8px; padding: 10px; min-height: 72px; font-size: 14px; background: #1F2937; }
+  .slot.train { background: #AB1D1D; color: #fff; }
+  .slot.race { background: #92400E; color: #FEF3C7; }
   .row { display: flex; flex-wrap: wrap; gap: 24px; }
   .row .card { flex: 1 1 360px; }
   ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
@@ -34,8 +34,8 @@
   .warn { background: #FEF3C7; color: #78350F; }
   .bad { background: #FEE2E2; color: #7F1D1D; }
   .pick { display: flex; flex-wrap: wrap; gap: 8px; }
-  .pick button { min-height: 44px; padding: 0 16px; border: 1px solid #D1D5DB; border-radius: 8px; background: #fff; font-size: 14px; cursor: pointer; }
-  .pick button.add { border-style: dashed; color: #374151; }
+  .pick button { min-height: 44px; padding: 0 16px; border: 1px solid #374151; border-radius: 8px; background: #1F2937; color: #F9FAFB; font-size: 14px; cursor: pointer; }
+  .pick button.add { border-style: dashed; color: #D1D5DB; }
 </style>
 </head>
 <body>
