@@ -4,7 +4,12 @@
   .layout { display: flex; flex-wrap: wrap; min-height: 100vh; }
   nav { flex: 0 0 220px; background: #111827; padding: 24px 16px; display: flex; flex-direction: column; gap: 8px; }
   .logo { color: #F9FAFB; font-weight: 700; font-size: 20px; margin-bottom: 16px; }
-  nav a { color: #D1D5DB; padding: 12px; border-radius: 8px; text-decoration: none; }
+  nav a { color: #D1D5DB; padding: 12px; border-radius: 8px; text-decoration: none; display: block;transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease; }
+  nav a:hover {
+  transform: scale(1.03);
+  background-color: #1F2937;
+  color: #087FFF;
+  }
   nav a.active { background-color: #087FFF20; border: 1px solid #087FFF; color: #FFFFFF; transition: all 0.2s ease;}
   main { flex: 1 1 600px; min-width: 0; padding: 32px; display: flex; flex-direction: column; gap: 24px; }
   header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
