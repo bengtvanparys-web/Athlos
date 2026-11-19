@@ -66,7 +66,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: conic-gradient(#22C55E 0 43%, #FACC15 43% 57%, #FF0000  57% 71%, #4B5563 71% 100%);
+    background: conic-gradient(#22C55E 0 43%, #FACC15 43% 57%, #EF4444  57% 71%, #4B5563 71% 100%);
     -webkit-mask: radial-gradient(closest-side, transparent 70%, #000 71%);
     mask: radial-gradient(closest-side, transparent 70%, #000 71%);
   }
@@ -98,5 +98,5 @@
   .dot-done { background: #22C55E; }
   .dot-partial { background: #FACC15; }
   .dot-todo { background: #4B5563; }
-  .dot-skipped { background: #FF0000 }
+  .dot-skipped { background: #EF4444 }
 
