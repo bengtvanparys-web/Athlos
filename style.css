@@ -98,4 +98,5 @@
   .dot-done { background: #22C55E; }
   .dot-partial { background: #FACC15; }
   .dot-todo { background: #4B5563; }
+  .dot-skipped { background: #FF0000 }
 
