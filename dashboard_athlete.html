@@ -1,60 +1,10 @@
 <!doctype html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Athlos – dashboard</title>
-<style>
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #080D16; color: #E5E7EB; }
-  .layout { display: flex; flex-wrap: wrap; min-height: 100vh; }
-  nav { flex: 0 0 220px; background: #111827; padding: 24px 16px; display: flex; flex-direction: column; gap: 8px; }
-  .logo { color: #F9FAFB; font-weight: 700; font-size: 20px; margin-bottom: 16px; }
-  nav a { color: #D1D5DB; padding: 12px; border-radius: 8px; text-decoration: none; }
-  nav a.active { background-color: #087FFF20; border: 1px solid #087FFF; color: #FFFFFF; transition: all 0.2s ease;}
-  main { flex: 1 1 600px; min-width: 0; padding: 32px; display: flex; flex-direction: column; gap: 24px; }
-  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-  h1 { margin: 0; font-size: 28px; color: #F9FAFB; }
-  h2 { margin: 0 0 16px; font-size: 18px; color: #F9FAFB; }
-  .sub { margin: 4px 0 0; color: #9CA3AF; }
-  .btn { min-height: 44px; padding: 0 20px;  border: 3px solid #087FFF; border-radius: 8px; background: #0B6B4F; color: #fff; font-weight: 600; font-size: 15px; cursor: pointer; }
-  .card { background: #111827; border: 2px solid #087FFF; border-radius: 12px; padding: 20px; }
-  .scroll { overflow-x: auto; }
-  .week { display: grid; grid-template-columns: repeat(7, minmax(110px, 1fr)); gap: 8px; }
-  .day { font-weight: 600; color: #9CA3AF; }
-  .slot { border-radius: 8px; padding: 10px; min-height: 72px; font-size: 14px; background-color: #FFFFFF08; border: 1px solid #30394A; color: #FFFFFF; transition: all 0.2s ease;}
-  .slot.train { background-color: #FF304F20; border: 1px solid #FF304F; color: #FFFFFF; transition: all 0.2s ease;}
-  .slot.race {background-color: #FFD43B20; border: 1px solid #FFD43B; color: #FFFFFF; transition: all 0.2s ease;}
-  .row { display: flex; flex-wrap: wrap; gap: 24px; }
-  .row .card { flex: 1 1 360px; }
-  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-  li { display: flex; justify-content: space-between; align-items: center; }
-  .chip { padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; }
-  .ok { background: #E6F2EE; color: #074d38; }
-  .warn { background: #FEF3C7; color: #78350F; }
-  .bad { background: #FEE2E2; color: #7F1D1D; }
-  .pick { display: flex; flex-wrap: wrap; gap: 8px; }
-  .pick button { min-height: 44px; padding: 0 16px; border: 1px solid #374151; border-radius: 8px; background: #1F2937; color: #F9FAFB; font-size: 14px; cursor: pointer; }
-  .pick button.add { border-style: dashed; color: #D1D5DB; }
-  .avail { width: 100%; border-collapse: collapse; }
-  .avail th { text-align: left; font-size: 13px; color: #9CA3AF; padding: 8px 0; border-bottom: 1px solid #1F2937; }
-  .avail td { padding: 12px 0; border-bottom: 1px solid #1F2937; }
-  .avail th:last-child, .avail td:last-child { text-align: center; width: 120px; }
-  .avail input[type="checkbox"] { width: 20px; height: 20px; accent-color: #087FFF; cursor: pointer; }
-  .table-scroll {  max-height: 240px; overflow-y: auto; padding-right: 16px; scrollbar-gutter: stable; scrollbar-width: thin; scrollbar-color: #374151 transparent; }
-  .zones th { text-align: left; font-size: 13px; color: #9CA3AF; padding: 8px 32px 8px 0; border-bottom: 1px solid #1F2937; }
-  .zones td { padding: 10px 32px 10px 0; border-bottom: 1px solid #1F2937; font-size: 14px; }
-  .metrics ul { gap: 0; }
-  .metrics li { padding: 10px 0; border-bottom: 1px solid #1F2937; font-size: 14px; }
-  .metrics h3 { margin: 20px 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #9CA3AF; }
-  .metrics .value { font-weight: 600; color: #F9FAFB; }
-  .session-route { display: block; width: 100%; max-height: 240px; margin: 8px 0 16px; }
-  .session-route path { fill: none; stroke: #087FFF; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
-  .session { width: 100%; border-collapse: collapse; }
-  .session th, .session td { padding: 10px 0; border-bottom: 1px solid #1F2937; font-size: 14px; text-align: left; }
-  .session th { font-weight: 400; color: #9CA3AF; }
-  .session td { text-align: right; font-weight: 600; color: #F9FAFB; }
- </style>
+ <link rel="stylesheet" href="style.css">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Athlos – dashboard</title>
 </head>
 <body>
 <div class="layout">
