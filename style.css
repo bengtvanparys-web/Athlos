@@ -51,13 +51,12 @@
   .pie-layout { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
   .pie-chart { position: relative; width: 160px; height: 160px; flex: 0 0 160px; }
   .pie {
-    --total: calc(var(--done) + var(--partial) + var(--todo));
-    --a: calc(var(--done) / var(--total) * 100%);
-    --b: calc((var(--done) + var(--partial)) / var(--total) * 100%);
-    width: 100%; height: 100%; border-radius: 50%;
-    background: conic-gradient(#22C55E 0 var(--a), #FACC15 var(--a) var(--b), #4B5563 var(--b) 100%);
-    -webkit-mask: radial-gradient(circle, transparent 56%, #000 57%);
-    mask: radial-gradient(circle, transparent 56%, #000 57%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#22C55E 0 50%, #FACC15 50% 67%, #4B5563 67% 100%);
+  -webkit-mask: radial-gradient(closest-side, transparent 70%, #000 71%);
+  mask: radial-gradient(closest-side, transparent 70%, #000 71%);
   }
   .pie-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
   .pie-center strong { font-size: 28px; color: #F9FAFB; }
