@@ -44,6 +44,10 @@
  .table-scroll { max-height: 240px; overflow-y: auto; }
  .zones th { text-align: left; font-size: 13px; color: #9CA3AF; padding: 8px 32px 8px 0; border-bottom: 1px solid #1F2937; }
  .zones td { padding: 10px 32px 10px 0; border-bottom: 1px solid #1F2937; font-size: 14px; }
+ .metrics ul { gap: 0; }
+.metrics li { padding: 10px 0; border-bottom: 1px solid #1F2937; font-size: 14px; }
+.metrics h3 { margin: 20px 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #9CA3AF; }
+.metrics .value { font-weight: 600; color: #F9FAFB; }
 </style>
 </head>
 <body>
@@ -177,6 +181,37 @@
           </tr>
         </tbody>
       </table>
+     </section>
+     <section class="card metrics">
+       <h2>Daily metrics</h2>
+       <p class="sub">[Date]</p>
+     
+       <h3>Body</h3>
+       <ul>
+         <li><span>Weight</span><span class="value">[kg]</span></li>
+         <li><span>Resting heart rate (RHR)</span><span class="value">[bpm]</span></li>
+         <li><span>Respiratory rate</span><span class="value">[breaths/min]</span></li>
+         <li><span>Blood oxygen (SpO2)</span><span class="value">[%]</span></li>
+         <li><span>Skin temperature</span><span class="value">[°C]</span></li>
+       </ul>
+     
+       <h3>Recovery</h3>
+       <ul>
+         <li><span>Whoop recovery score</span><span class="value">[%]</span></li>
+         <li><span>Heart rate variability (HRV)</span><span class="value">[ms]</span></li>
+         <li><span>Previous day strain</span><span class="value">[0–21]</span></li>
+       </ul>
+     
+       <h3>Sleep</h3>
+       <ul>
+         <li><span>Sleep score</span><span class="value">[%]</span></li>
+         <li><span>Total sleep</span><span class="value">[h:min]</span></li>
+         <li><span>REM sleep</span><span class="value">[h:min]</span></li>
+         <li><span>Deep sleep</span><span class="value">[h:min]</span></li>
+         <li><span>Light sleep</span><span class="value">[h:min]</span></li>
+         <li><span>Time awake</span><span class="value">[min]</span></li>
+         <li><span>Sleep efficiency</span><span class="value">[%]</span></li>
+       </ul>
      </section>
     </div>
   </main>
