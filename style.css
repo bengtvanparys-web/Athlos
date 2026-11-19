@@ -28,6 +28,7 @@
   .slot { border-radius: 8px; padding: 10px; min-height: 72px; font-size: 14px; background-color: #FFFFFF08; border: 1px solid #30394A; color: #FFFFFF; transition: all 0.2s ease;}
   .slot.train { background-color: #FF304F20; border: 1px solid #FF304F; color: #FFFFFF; transition: all 0.2s ease;}
   .slot.race {background-color: #FFD43B20; border: 1px solid #FFD43B; color: #FFFFFF; transition: all 0.2s ease;}
+  .slot.appointment {background-color: #22C55E20; border: 1px solid #22C55E; color: #FFFFFF; transition: all 0.2s ease;}
   .row { display: flex; flex-wrap: wrap; gap: 24px; }
   .row .card { flex: 1 1 360px; }
   ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
