@@ -153,10 +153,10 @@
   text-align: left;
   font-size: 13px;
   color: #9CA3AF;
-  padding: 8px 12px 8px 0;
+  padding: 8px 30px 8px 0;
   border-bottom: 1px solid #1F2937;
 }
-.results-table td { padding: 12px 12px 12px 0; border-bottom: 1px solid #1F2937; font-size: 14px; }
+.results-table td { padding: 12px 30px 12px 0; border-bottom: 1px solid #1F2937; font-size: 14px; }
 .results-table td:first-child { white-space: nowrap; color: #9CA3AF; }
 .results-table td:nth-child(2) { font-weight: 600; color: #F9FAFB; }
 .results-table .empty td { color: #9CA3AF; }
