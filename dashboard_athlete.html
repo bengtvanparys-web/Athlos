@@ -41,6 +41,7 @@
  .avail td { padding: 12px 0; border-bottom: 1px solid #1F2937; }
  .avail th:last-child, .avail td:last-child { text-align: center; width: 120px; }
  .avail input[type="checkbox"] { width: 20px; height: 20px; accent-color: #087FFF; cursor: pointer; }
+ .table-scroll { max-height: 240px; overflow-y: auto; }
 </style>
 </head>
 <body>
@@ -78,6 +79,7 @@
     <div class="row">
      <section class="card">
        <h2>Availability races</h2>
+       <div class="table-scroll">
        <table class="avail">
          <thead>
            <tr>
@@ -104,6 +106,7 @@
            </tr>
          </tbody>
        </table>
+       </div>
      </section>
      <section class="card">
       <h2>Zones</h2>
