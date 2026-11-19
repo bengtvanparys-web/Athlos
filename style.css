@@ -99,4 +99,29 @@
   .dot-partial { background: #FACC15; }
   .dot-todo { background: #4B5563; }
   .dot-skipped { background: #EF4444 }
-
+  .coach-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: #087FFF;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(8, 127, 255, 0.4);
+  transition: all 0.2s ease;
+  }
+  
+  .coach-btn:hover {
+  background: #2B93FF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(8, 127, 255, 0.55);
+  }
+  
