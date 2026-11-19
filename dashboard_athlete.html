@@ -7,8 +7,8 @@
  <title>Athlos – dashboard</title>
 </head>
 <a href="#" class="coach-btn" aria-label="Open AI coach">
-  <span class="coach-icon">✦</span>
-  <span>AI Coach</span>
+ <span class="coach-icon">✦</span>
+ <span>AI Coach</span>
 </a>
 <body>
 <div class="layout">
@@ -225,38 +225,39 @@
        </div>
      </section>
     </div> 
+    <div class="row">
+     <section class="card results">
+      <h2>Results</h2>
+      <p class="sub">
+        <a href="https://www.procyclingstats.com/rider/bengt-van-parys" target="_blank" rel="noopener">View full profile on ProCyclingStats</a>
+      </p>
+    
+      <form class="result-form" id="result-form">
+        <input type="date" id="r-date" aria-label="Date" required>
+        <input type="text" id="r-race" class="wide" placeholder="Race" aria-label="Race" required>
+        <input type="text" id="r-pos" placeholder="Result (e.g. 12 or DNF)" aria-label="Result" required>
+        <button type="submit" class="btn hover-lift">Add</button>
+      </form>
+    
+      <div class="table-scroll">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Result</th>
+              <th>Race</th>
+            </tr>
+          </thead>
+          <tbody id="results-body">
+            <tr class="empty"><td colspan="3">No results yet. Add your first result above.</td></tr>
+          </tbody>
+        </table>
+      </div>
+     </section>
+    </div>
   </main>
  </div>
- <div class="row">
-  <section class="card results">
-   <h2>Results</h2>
-   <p class="sub">
-     <a href="https://www.procyclingstats.com/rider/bengt-van-parys" target="_blank" rel="noopener">View full profile on ProCyclingStats</a>
-   </p>
- 
-   <form class="result-form" id="result-form">
-     <input type="date" id="r-date" aria-label="Date" required>
-     <input type="text" id="r-race" class="wide" placeholder="Race" aria-label="Race" required>
-     <input type="text" id="r-pos" placeholder="Result (e.g. 12 or DNF)" aria-label="Result" required>
-     <button type="submit" class="btn hover-lift">Add</button>
-   </form>
- 
-   <div class="table-scroll">
-     <table class="results-table">
-       <thead>
-         <tr>
-           <th>Date</th>
-           <th>Result</th>
-           <th>Race</th>
-         </tr>
-       </thead>
-       <tbody id="results-body">
-         <tr class="empty"><td colspan="3">No results yet. Add your first result above.</td></tr>
-       </tbody>
-     </table>
-   </div>
-  </section>
- </div>
+
 <script src="script.js" defer></script>
 </body>
 </html>
