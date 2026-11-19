@@ -36,6 +36,11 @@
   .pick { display: flex; flex-wrap: wrap; gap: 8px; }
   .pick button { min-height: 44px; padding: 0 16px; border: 1px solid #374151; border-radius: 8px; background: #1F2937; color: #F9FAFB; font-size: 14px; cursor: pointer; }
   .pick button.add { border-style: dashed; color: #D1D5DB; }
+ .avail { width: 100%; border-collapse: collapse; }
+ .avail th { text-align: left; font-size: 13px; color: #9CA3AF; padding: 8px 0; border-bottom: 1px solid #1F2937; }
+ .avail td { padding: 12px 0; border-bottom: 1px solid #1F2937; }
+ .avail th:last-child, .avail td:last-child { text-align: center; width: 120px; }
+ .avail input[type="checkbox"] { width: 20px; height: 20px; accent-color: #087FFF; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -71,15 +76,31 @@
     </section>
 
     <div class="row">
-      <section class="card">
-        <h2>Selectie: [koers]</h2>
-        <p class="sub">Zondag · [plaats] · [aantal] renners</p>
-        <div class="pick" style="margin-top:16px">
-          <button>[Renner 1]</button>
-          <button>[Renner 4]</button>
-          <button class="add">+ Toevoegen</button>
-        </div>
-      </section>
+     <section class="card">
+       <h2>Availability races</h2>
+       <table class="avail">
+         <thead>
+           <tr>
+             <th>Race</th>
+             <th>Available</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td><label for="race1">[Wedstrijd 1]</label></td>
+             <td><input type="checkbox" id="race1"></td>
+           </tr>
+           <tr>
+             <td><label for="race2">[Wedstrijd 2]</label></td>
+             <td><input type="checkbox" id="race2"></td>
+           </tr>
+           <tr>
+             <td><label for="race3">[Wedstrijd 3]</label></td>
+             <td><input type="checkbox" id="race3"></td>
+           </tr>
+         </tbody>
+       </table>
+     </section>
     </div>
   </main>
 </div>
