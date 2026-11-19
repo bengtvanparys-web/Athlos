@@ -86,101 +86,103 @@
      <section class="card">
        <h2>Availability races</h2>
        <div class="table-scroll">
-       <table class="avail">
+        <table class="avail">
+          <thead>
+            <tr>
+              <th>date</th>
+              <th>Race</th>
+              <th>Available</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="2027-03-14">14/03/2027</time></td>
+              <td><label for="race1">[Wedstrijd 1]</label></td>
+              <td><input type="checkbox" id="race1"></td>
+            </tr>
+            <tr>
+              <td><time datetime="2027-03-14">14/03/2027</time></td>
+              <td><label for="race1">[Wedstrijd 1]</label></td>
+              <td><input type="checkbox" id="race1"></td>
+            </tr>  
+            <tr>
+              <td><time datetime="2027-03-14">14/03/2027</time></td>
+              <td><label for="race1">[Wedstrijd 1]</label></td>
+              <td><input type="checkbox" id="race1"></td>
+            </tr>        
+            <tr>
+              <td><time datetime="2027-03-14">14/03/2027</time></td>
+              <td><label for="race2">[Wedstrijd 2]</label></td>
+              <td><input type="checkbox" id="race2"></td>
+            </tr>
+            <tr>
+              <td><time datetime="2027-03-14">14/03/2027</time></td>
+              <td><label for="race3">[Wedstrijd 3]</label></td>
+              <td><input type="checkbox" id="race3"></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+      <section class="card">
+       <h2>Zones</h2>
+       <p class="sub">FTP: 480W</p>
+       <div class="table-scroll">
+       <table class="zones">
          <thead>
            <tr>
-             <th>date</th>
-             <th>Race</th>
-             <th>Available</th>
+             <th>Zone</th>
+             <th> </th>
+             <th>% FTP</th>
+             <th>power</th>
            </tr>
          </thead>
          <tbody>
            <tr>
-             <td><time datetime="2027-03-14">14/03/2027</time></td>
-             <td><label for="race1">[Wedstrijd 1]</label></td>
-             <td><input type="checkbox" id="race1"></td>
+             <td><span class="zone z1">Z1</span></td>
+             <td>recovery</td>
+             <td>&lt;55%</td>
+             <td><300 W</td>
+           </tr>   
+           <tr>
+             <td><span class="zone z2">Z2</span></td>
+             <td>LSD</td>
+             <td>56–75%</td>
+             <td>300-330W</td>
            </tr>
            <tr>
-             <td><time datetime="2027-03-14">14/03/2027</time></td>
-             <td><label for="race1">[Wedstrijd 1]</label></td>
-             <td><input type="checkbox" id="race1"></td>
-           </tr>  
-           <tr>
-             <td><time datetime="2027-03-14">14/03/2027</time></td>
-             <td><label for="race1">[Wedstrijd 1]</label></td>
-             <td><input type="checkbox" id="race1"></td>
-           </tr>        
-           <tr>
-             <td><time datetime="2027-03-14">14/03/2027</time></td>
-             <td><label for="race2">[Wedstrijd 2]</label></td>
-             <td><input type="checkbox" id="race2"></td>
+             <td><span class="zone z3">Z3</span></td>
+             <td>Sweetspot</td>
+             <td>76–90%</td>
+             <td>330-360W</td>
            </tr>
            <tr>
-             <td><time datetime="2027-03-14">14/03/2027</time></td>
-             <td><label for="race3">[Wedstrijd 3]</label></td>
-             <td><input type="checkbox" id="race3"></td>
+             <td><span class="zone z4">Z4</span></td>
+             <td>FATmax</td>
+             <td>91–105%</td>
+             <td>360-400W</td>
+           </tr>
+           <tr>
+             <td><span class="zone z5">Z5</span></td>
+             <td>drampel</td>
+             <td>106–120%</td>
+             <td>400-460W</td>
+           </tr>
+           <tr>
+             <td><span class="zone z6">Z6</span></td>
+             <td>VO2max</td>
+             <td>121–150%</td>
+             <td>460-500W</td>
+           </tr>
+           <tr>
+             <td><span class="zone z7">Z7</span></td>
+             <td>Neuromuscular</td>
+             <td>&gt;150%</td>
+             <td>&gt;500W</td>
            </tr>
          </tbody>
        </table>
        </div>
-     </section>
-     <section class="card">
-      <h2>Zones</h2>
-      <p class="sub">FTP: 480W</p>
-      <table class="zones">
-        <thead>
-          <tr>
-            <th>Zone</th>
-            <th> </th>
-            <th>% FTP</th>
-            <th>power</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="zone z1">Z1</span></td>
-            <td>recovery</td>
-            <td>&lt;55%</td>
-            <td><300 W</td>
-          </tr>   
-          <tr>
-            <td><span class="zone z2">Z2</span></td>
-            <td>LSD</td>
-            <td>56–75%</td>
-            <td>300-330W</td>
-          </tr>
-          <tr>
-            <td><span class="zone z3">Z3</span></td>
-            <td>Sweetspot</td>
-            <td>76–90%</td>
-            <td>330-360W</td>
-          </tr>
-          <tr>
-            <td><span class="zone z4">Z4</span></td>
-            <td>FATmax</td>
-            <td>91–105%</td>
-            <td>360-400W</td>
-          </tr>
-          <tr>
-            <td><span class="zone z5">Z5</span></td>
-            <td>drampel</td>
-            <td>106–120%</td>
-            <td>400-460W</td>
-          </tr>
-          <tr>
-            <td><span class="zone z6">Z6</span></td>
-            <td>VO2max</td>
-            <td>121–150%</td>
-            <td>460-500W</td>
-          </tr>
-          <tr>
-            <td><span class="zone z7">Z7</span></td>
-            <td>Neuromuscular</td>
-            <td>&gt;150%</td>
-            <td>&gt;500W</td>
-          </tr>
-        </tbody>
-      </table>
      </section>
      <section class="card metrics">
        <h2>Daily metrics</h2>
