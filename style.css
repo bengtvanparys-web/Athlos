@@ -48,8 +48,8 @@
   .session th, .session td { padding: 10px 0; border-bottom: 1px solid #1F2937; font-size: 14px; text-align: left; }
   .session th { font-weight: 400; color: #9CA3AF; }
   .session td { text-align: right; font-weight: 600; color: #F9FAFB; }
-  .pie-layout { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
-  .pie-chart { position: relative; width: 160px; height: 160px; flex: 0 0 160px; }
+  .pie-layout { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+  .pie-chart { position: relative; width: 240px; height: 240px; flex: 0 0 240px; }
   .pie {
   width: 100%;
   height: 100%;
@@ -59,9 +59,9 @@
   mask: radial-gradient(closest-side, transparent 70%, #000 71%);
   }
   .pie-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  .pie-center strong { font-size: 28px; color: #F9FAFB; }
-  .pie-center span { font-size: 13px; color: #9CA3AF; }
-  .legend { flex: 1 1 160px; gap: 10px; }
+  .pie-center strong { font-size: 40px; color: #F9FAFB; }
+  .pie-center span { font-size: 15px; color: #9CA3AF; }
+  .legend { width: 100%; gap: 10px; }
   .legend li { font-size: 14px; }
   .legend b { color: #F9FAFB; }
   .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
