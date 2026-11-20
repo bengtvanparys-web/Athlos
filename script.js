@@ -116,3 +116,27 @@ if (calGrid) {
 
   renderCalendar();
 }
+
+
+// ===== add-activity menu =====
+const addBtn = document.getElementById('add-btn');
+const addMenu = document.getElementById('add-menu');
+
+if (addBtn && addMenu) {
+  const setMenu = (open) => {
+    addBtn.setAttribute('aria-expanded', open);
+    addMenu.hidden = !open;
+  };
+
+  addBtn.addEventListener('click', () => setMenu(addMenu.hidden));
+
+  // click outside the menu closes it
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.add-fab')) setMenu(false);
+  });
+
+  // Escape closes it
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenu(false);
+  });
+}
