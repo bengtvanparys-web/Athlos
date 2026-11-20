@@ -7,6 +7,15 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Athlos – calendar</title>
 </head>
+<div class="add-fab">
+  <button type="button" class="add-btn" id="add-btn" aria-label="Add activity" aria-expanded="false" aria-controls="add-menu">+</button>
+  <div class="add-menu" id="add-menu" role="group" aria-labelledby="add-title" hidden>
+    <p class="add-title" id="add-title">Add activity</p>
+    <button type="button" class="add-opt train" data-type="training">Training</button>
+    <button type="button" class="add-opt race" data-type="race">Race</button>
+    <button type="button" class="add-opt" data-type="note">Note</button>
+  </div>
+</div>
 <a href="#" class="coach-btn" aria-label="Open AI coach">
  <span class="coach-icon">✦</span>
  <span>AI Coach</span>
