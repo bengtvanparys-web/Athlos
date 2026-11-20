@@ -170,3 +170,22 @@
 .results-table td:first-child { white-space: nowrap; color: #9CA3AF; }
 .results-table td:nth-child(2) { font-weight: 600; color: #F9FAFB; }
 .results-table .empty td { color: #9CA3AF; }
+
+.cal-head { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+.cal-head h2 { margin: 0; flex: 1; }
+
+.cal-grid { display: grid; grid-template-columns: repeat(7, minmax(90px, 1fr)); gap: 8px; }
+.cal-weekday { font-weight: 600; font-size: 13px; color: #9CA3AF; padding: 0 4px; }
+
+.cal-cell {
+  min-height: 96px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #FFFFFF08;
+  border: 1px solid #30394A;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.cal-cell time { font-weight: 600; }
+.cal-cell.other { opacity: 0.4; }
+.cal-cell.today { background-color: #087FFF20; border-color: #087FFF; }
