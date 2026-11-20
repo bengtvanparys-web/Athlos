@@ -10,7 +10,7 @@ function formatDate(isoDate) {
 
 // only run on pages that actually have the results form
 if (form && body) {
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', (event) => { 
     event.preventDefault(); // stops the page from reloading
 
     const date = document.getElementById('r-date').value;
